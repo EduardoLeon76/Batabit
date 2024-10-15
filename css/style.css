@@ -244,6 +244,7 @@ main{
     left: calc(50% - 20px);
     transform: scaleX(-1);
     background-image: url("../assets/img/logo.svg");
+    background-size: cover;
 }
 
 .product-detail--title{
@@ -279,16 +280,6 @@ main{
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
-.product-detail--card .clock{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-bottom: 10px;
-    background-image: url("../assets/img/clock.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 .product--card-title{
     margin-bottom: 15px;
     font-size: 1.8rem;
@@ -301,4 +292,45 @@ main{
     font-weight: 500;
     line-height: 1.8rem;
     color: #808080;
+}
+.product-detail--card .icon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product-detail--card .clock{
+    background-image: url("../assets/img/clock.svg");
+}
+.product-detail--card .eye{
+    background-image: url("../assets/img/eye.svg");
+}
+.product-detail--card .dollar{
+    background-image: url("../assets/img/dollar-sign.svg");
+}
+.product-detail--card .check{
+    background-image: url("../assets/img/check-circle.svg");
+}
+
+.bitcoin-img-container{
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url("../assets/img/batagirl10mb.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.bitcoin-img-container h2{
+    padding-top: 60px;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+
 }
