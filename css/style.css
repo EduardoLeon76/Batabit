@@ -135,6 +135,12 @@ main{
     line-height: 1.6rem;
     color: #757575;
 }
+.main-tables-container{
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 .main-currency-table{
     width: 70%;
     min-width: 235px;
@@ -478,6 +484,7 @@ main{
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 }
+
 footer{
     display: flex;
     width: 100%;
