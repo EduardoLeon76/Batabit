@@ -362,17 +362,119 @@ main{
     
 }
 .plans-container--card{
-
-}
-.plans-container--card{
     position: relative;
-    width: 70%;
+    scroll-snap-align: center;
+    width: 55%;
     min-width: 230px;
     max-width: 300px;
     height: 300px;
-    margin: 50px auto 0;
+    margin: 50px 20px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.recomendado{
+    position: absolute;
+    width: 120px;
+    height: 34px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 10px;
+    left: calc(50% - 60px);
+    top: -15px;
+    font-size: 1.3rem;
+    padding: 7px;
+}
+/* .plan-info-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+.plan-card--title{
+    padding-top: 30px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+.plan-card-price{
+    padding: 5px 0;
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 5rem;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+.plan-card-price span{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.plan-card--saving{
+    color: #757575;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.plan-card--ca{
+    width: 80%;
+    height: 55px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color:var(--black);
+    font-family: DM Sans;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+.plan-card--ca span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url("../assets/icon/arrow-right\ 1.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.basico{
+    background-color: var(--secondary-blue);
+}
+.basico-border{
+    border: 2px solid var(--secondary-blue);
+}
+.premium{
+    background-color: var(--grey);
+    color: var(--black);
+}
+.premium-back{
+    background-color: var(--black);
+}
+.premium-back .plan-card--title,
+.premium-back .plan-card-price,
+.premium-back .plan-card--ca{
+    color: white;
+}
+.premium-back .plan-card--ca{
+    background-color: var(--black);
+    border: 2px solid var(--grey);
+
+}
+.plans-container--card .basic{
+    margin-bottom: 31px;
+}
+
+.plans-container--slider{
+    display: flex;
+    /* gap: 50px; */
+    height: 100%;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
